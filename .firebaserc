@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "netflixgpt-3cf09",
+    "netflixGPT": "netflixgpt-3cf09",
+    "netflix": "netflixgpt-3cf09"
+  },
+  "targets": {},
+  "etags": {}
+}
