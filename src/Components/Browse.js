@@ -7,6 +7,7 @@ import usePopulerMovies from "../Hooks/usePopulerMovies";
 import useTopRatedMovies from "../Hooks/useTopRatedMovies";
 import { useSelector } from "react-redux";
 import GptSearch from "./GptSearch";
+import Footer from "./Footer";
 
 const Browse = () => {
   const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
@@ -19,7 +20,7 @@ const Browse = () => {
 
   return (
     <div>
-      <div className="absolute w-full">
+      <div className="absolute w-full ">
         <Header />
       </div>
       <div >
@@ -29,6 +30,7 @@ const Browse = () => {
           <>
             <MainContainer />
             <SecondaryContainer />
+            <Footer/>
           </>
         )}
       </div>

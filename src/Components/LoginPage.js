@@ -203,7 +203,7 @@ const Login = () => {
             <div className="flex justify-between">
               <div className="flex">
                 <input type="checkbox" className="bg-slate-800 "></input>
-                <p className="ml-2 text-[#b3b3b3]">rem m</p>
+                <p className="ml-2 text-[#b3b3b3]">Remember me</p>
               </div>
               <div>
                 <p className="text-[#b3b3b3]">Need help?</p>
