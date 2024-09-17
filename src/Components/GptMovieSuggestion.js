@@ -3,7 +3,9 @@ import MovieList from "./MovieList";
 import Footer from "./Footer";
 const GptMovieSuggestion = () => {
   const { movieResult, movieName } = useSelector((store) => store.gpt);
-  console.log(movieResult + movieName)
+  console.log("Inside GPT Movies Suggestions ...")
+  console.log(movieResult);
+  console.log(movieName);
   if (!movieName) return null;
   return (
     <div className="m-2 p-2 sm:m-3 sm:p-3 md:m-4 md:p-4">
@@ -12,11 +14,11 @@ const GptMovieSuggestion = () => {
           <MovieList
             key={movieName}
             title={movieName}
-            movies={movieResult[index]}
+            movies={movieResult}
           />
         ))}
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };
